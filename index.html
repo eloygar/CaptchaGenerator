@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/61ebb60581.js" crossorigin="anonymous"></script>
+</head>
+
+<body onload="createCaptcha()">
+    <script src="script.js"></script>
+    <div class="container">
+        <div class="container-1">
+            <div id="captcha">
+
+            </div>
+            <button class="regenerateCaptchaBtn" onclick="createCaptcha()">
+                <i class="fas fa-redo"></i>
+            </button>
+        </div>
+        <input type="text" placeholder="Enter Captcha " id="cpatchaTextBox">
+        <button onclick="validateCaptcha()">Submit</button>
+    </div>
+</body>
+
+</html>
